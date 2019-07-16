@@ -7,13 +7,17 @@
 
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
+import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
 
 import messages from './messages';
 
 export default function NotFound() {
   return (
-    <h1>
-      <FormattedMessage {...messages.header} />
-    </h1>
+    <Container maxWidth="md">
+      <Typography variant="h4">
+        <FormattedMessage {...messages.header} />
+      </Typography>
+    </Container>
   );
 }

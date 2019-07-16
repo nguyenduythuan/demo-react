@@ -26,6 +26,23 @@ const GlobalStyle = createGlobalStyle`
     font-family: Georgia, Times, 'Times New Roman', serif;
     line-height: 1.5em;
   }
+  header.MuiPaper-root.MuiPaper-elevation4.MuiAppBar-root.MuiAppBar-positionStatic.MuiAppBar-colorPrimary {
+    background-color: #1976d2;
+    min-height: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+  li > a.active {
+    color: white;
+    opacity: 1;
+  }
+  li > a.active:hover {
+    background-color: #00000014;
+    color: white;
+  }
+  span.MuiButtonBase-root.MuiTableSortLabel-root {
+    min-width: 70px;
+  }
 `;
 
 export default GlobalStyle;
